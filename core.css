@@ -1,4 +1,5 @@
-/* Variables to easily change the theme */
+/* CUSTOM ROAM THEME */
+
 :root {
   /* Roam default variables */
   --primary-color: #137cbd;
@@ -19,7 +20,7 @@
   --external-link-color: #4CAF50;
   --sidebar-link-color: #4CAF50;
   --page-brackets: rgba(228, 124, 67, 0.25);
-  --h1-font-color: #1189BD;
+  --h1-font-color: rgb(25, 141, 190);
   --h2-font-color: #1189BD;
   --h3-font-color: #1189BD;
   --strong: #508BB5;
@@ -54,7 +55,7 @@
   --saving-remote: #d9822b;
   --synched: #0f9960;
   
-  /* backgrounds and outlines */
+  /* Backgrounds and Outlines */
   --body-bg: #232323;
   --left-sidebar-bg: #2b2b2b;
   --right-sidebar-bg: #2b2b2b;
@@ -141,9 +142,6 @@
 
 /* ----------------------------------------- */
 
-/* PAGE WIDTH - Un-comment the section below to maximize page width, line length, and images widths */
-
-
 .roam-block-container {
   max-width: 100% !important; 
 }
@@ -174,10 +172,9 @@ padding-top: 0 !important;
 padding-bottom: 0 !important;
 }
 
-
 /* ----------------------------------------- */
-/* QUERIES - Query results options */
 
+/* QUERIES - Query results options */
 /* Show empty query message */
 .rm-block-text .rm-reference-main .rm-mentions:empty:after {
   content: var(--no-query-results);
@@ -186,16 +183,11 @@ padding-bottom: 0 !important;
   padding: var(--s1);
 }
 .rm-query {
-  /* border: 0.5px solid #38332e; */
   padding-bottom: var(--s1);
-  /* border-top-left-radius: 7px;
-  border-top-right-radius: 7px; */
   border-radius: 7px;
   border: 0.75px solid var(--query-results-border);
 }
 .rm-query .rm-query-title {
-  /* color: #508bb5; */
-  /* background-color: #38332e; */
   padding: var(--s1);
   font-size: .8em;
   border-top-left-radius: 7px;
@@ -203,19 +195,10 @@ padding-bottom: 0 !important;
   background-color: var(--reference-item-bg);
   color: var(--breadcrumb-color);
 }
-
 /* HIDE QUERY SCRIPT - Comment/uncomment to hide the original query and revert back to legacy behavior */
 .rm-query .rm-query-title {
   display: none;
 }
-
-/* MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
-    #min-title = hides the page reference link / page title
-    #min-con = hides the contextual reference information (breadcrumbs)
-    #minimal = hides both the title and the context
-    #min-q = hides the query string, similar to legacy behavior
-    #min-all = hides everything — title, context, and query string
- */
 
 [data-tag="minimal"], 
 [data-tag="minimal"] + .rm-query .rm-title-arrow-wrapper,
@@ -246,43 +229,6 @@ display:none!important; /* hide page reference (title) */
 
 /* ----------------------------------------- */
 
-/* CUSTOM TAGS: Uncomment to create custom styles for specific tags. Change "Meeting" to match some portion of the title of the tag you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new tag to be customized */
-
-/* 
-span[data-tag*="Meeting"] {
-  background-color: #F00;
-  color: #fff;
-  padding: 3px 7px;
-  line-height: 2em;
-  font-weight: 500;
-}
- */
-
-
- /* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized*/
-
-/* 
-span[data-link-title*="Theme"] .rm-page-ref-link-color {
-  background-color: #F00;
-  color: #fff;
-  padding: 3px 7px;
-  line-height: 2em;
-  font-weight: 500;
-}
- */
-
-
-/* ----------------------------------------- */
-
-/* ATTRIBUTE STYLES: Uncomment and customize this section to style all attributes */
-/*
-.roam-block span strong[style*='cursor: pointer;'] {
-    color: #9C27B0 !important;
-}
- */
-
-/* ----------------------------------------- */
-
 /* DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
 div#block-input-ghost span:before {
   content: "Cmd+enter or ";
@@ -294,25 +240,6 @@ div#block-input-ghost span:before {
   font-family: var(--main-font);
 }
 
-/* ----------------------------------------- */
-
-/* POMODORO - Comment/un-comment this section to apply custom styling to the the Pomodoro timer */
-/* ------------- Red Pomodoro ------------- */
-/*
-.rm-pomodoro {
-  background: var(--reference-item-bg) !important;
-  color: #4CAF50 !important;
-  padding: 2px 12px;
-  line-height: 1.7em;
-  font-weight: 600;
-  border-radius: 2em;
-  border: 1px solid #FC596370;
-}
-
-.rm-pomodoro::first-letter {
-  margin-right: 4px;
-}
-*/
 /* ----------------------------------------- */
 
 .rm-reference-container span[style*="color: red;"] {
@@ -449,7 +376,6 @@ div#block-input-ghost span:before {
   margin-bottom: 25px;
 }
 #scroll-1::-webkit-scrollbar-track {  
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
   background-color: #F5F5F5;
 }
@@ -459,7 +385,6 @@ div#block-input-ghost span:before {
 }
 #scroll-1::-webkit-scrollbar-thumb {
   border-radius: 8px;
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
   background-color: #8A9BA8;
 }
 #home {
@@ -775,7 +700,7 @@ html {
   height: 20px;
   margin: 0px 4px 4px 0px;
 }
-/*RR change: emoji button background and border color*/
+/* Emoji button background and border color*/
 div.rm-emoji-button {
   background-color: var(--emoji-bg) !important;
   border: 0.5px solid var(--emoji-border) !important;
@@ -801,13 +726,9 @@ div.rm-emoji-button {
   font-weight: 600;
 }
 .kanban-board {
-  /*background-color: #a7b6c2;*/
   max-width: 100vw;
   padding: 12px;
-  /* min-width: 100%;
-  min-height: 48px;
-  overflow-x: scroll; */
-  background-color: var(--kanban-board-bg); /*RR change: dark background color for board*/
+    background-color: var(--kanban-board-bg);
 }
 .kanban-board .kanban-column-container {
   display: flex;
@@ -817,11 +738,10 @@ div.rm-emoji-button {
   cursor: pointer;
   flex: 1 0 200px;
   flex-wrap: nowrap;
-  /*background-color: #ededed;*/
   margin: 0px 4px 0px 4px;
   padding: 4px;
   min-width: 200px;
-  background-color: var(--kanban-column-bg); /*RR change: column background color*/
+  background-color: var(--kanban-column-bg);
 }
 .kanban-title {
   text-align: center;
@@ -831,35 +751,32 @@ div.rm-emoji-button {
   padding: 4px 0px 8px;
   margin-bottom: 12px;
   border-bottom: 1px solid #5c7080;
-  color: var(--kanban-column-font-color); /*RR change: Orange column title color*/
+  color: var(--kanban-column-font-color);
 }
 .kanban-card {
-  /*background-color: white;*/
   margin: 8px;
   padding: 8px;
-  background-color: var(--kanban-card-bg); /*RR change: Grey card background color*/
-  color: var(--kanban-card-font-color); /*RR change: Blue ard text color*/
+  background-color: var(--kanban-card-bg);
+  color: var(--kanban-card-font-color);
 }
 div.kanban-title,
 div.kanban-card {
-  font-family: var(--main-font); /*RR change: font*/
+  font-family: var(--main-font);
 }
 .rm-embed-container {
   position: relative;
   display: flex;
-  /* background-color: #ebf1f5; */
   margin-top: -3px;
   margin-left: -7px;
   padding-left: 4px;
   margin-bottom: -3px;
-  background-color: var(--reference-item-bg); /*RR change: added customization variable*/
+  background-color: var(--reference-item-bg);
 }
 .rm-embed-container .rm-embed-container {
   background-color: #f5f8fa;
   background-color: var(--reference-item-bg);
 }
 .rm-embed-container .rm-embed-container .rm-embed-container {
-  /* background-color: #ced9e0; */
   background-color: var(--reference-item-bg);
 }
 .rm-embed-container .rm-embed-edit {
@@ -897,7 +814,6 @@ div.kanban-card {
   width: 100%;
   height: 4px;
   border-radius: 10px;
-  /*background-color: #5c7080;*/
 }
 .CodeMirror-activeline-background {
   background: transparent !important;
@@ -926,11 +842,7 @@ html {
     font-family: 'Inter var', sans-serif;
   }
 }
-/* :root {
-  --primary-color: #137cbd;
-  --s1: 8px;
-  --background-color: #e1e8ed; 
-} */
+
 body {
   overscroll-behavior: none;
 }
@@ -964,22 +876,18 @@ body {
   height: 100vh;
   overflow: hidden;
   position: relative;
-  background-color: var(--body-bg); /*RR change: Dark background color*/
+  background-color: var(--body-bg);
 }
 .roam-body .roam-app {
   height: 100%;
   width: 100%;
   position: relative;
   -webkit-overflow-scrolling: touch;
-  /*color: #202b33;*/
-  color: var(--main-font-color); /*RR change: lighter text for dark background*/
+  color: var(--main-font-color);
 }
 .roam-body .roam-app h1 {
-  /*color: #202b33;*/
-  /*RR change: font, blue text and background highlight*/
   color: var(--h1-font-color);
   font-family: var(--main-font);
-  
 }
 .roam-body .roam-app .roam-sidebar-container {
   position: absolute;
@@ -989,10 +897,7 @@ body {
   bottom: 45px;
   z-index: 999;
   transition: all 200ms ease-in;
-  /*background-color: #2f3437;*/
-  /*background-color: #182026;*/
-  background-color: var(--left-sidebar-bg); /*RR change: darken the sidebar*/
-
+  background-color: var(--left-sidebar-bg);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-hover-sidebar-reveal {
   position: absolute;
@@ -1015,24 +920,15 @@ body {
   padding: 8px 20px;
   font-weight: bold;
   cursor: pointer;
-  /*font-size: 14px;*/
-  /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
   color: var(--sidebar-font-color);
   font-size: 1em;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
-  /*color: #f5f8fa;*/
-  /*background-color: #10161a;*/
-  /*RR change: orange text */
   color: var(--sidebar-font-color-hover);
   background-color: var(--sidebar-hover-bg);
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
-  /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
   color: var(--sidebar-font-color);
-;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages {
   overflow-y: auto;
@@ -1041,17 +937,11 @@ body {
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
   text-decoration: none;
   cursor: pointer;
-  /*font-size: 14px;*/
   padding: 8px 0px 8px 4px;
-  /*color: #5c7080;*/
-  /*RR change: brighten text and font size*/ 
   color: var(--sidebar-font-color);
   font-size: 1em;
 }
 .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
-  /*color: #f5f8fa;*/
-  /*background-color: #10161a;*/
-  /*RR change: orange text */
   color: var(--sidebar-font-color-hover);
   background-color: var(--sidebar-hover-bg);
 }
@@ -1087,13 +977,12 @@ body {
   position: fixed;
   width: 100%;
   z-index: 101;
-  /*background-color: white;*/
   padding-right: 16px;
   padding-left: 16px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: transparent; /*RR change: allow background to show through*/
+  background-color: transparent;
 }
 .trunc {
   max-width: 120px;
@@ -1128,12 +1017,7 @@ body {
 .rm-input::-webkit-input-placeholder {
   color: #ced9e0;
 }
-.rm-input:-moz-placeholder {
-  /* Firefox 18- */
-  color: #ced9e0;
-}
 .rm-input::-moz-placeholder {
-  /* Firefox 19+ */
   color: #ced9e0;
 }
 .rm-input:-ms-input-placeholder {
@@ -1152,14 +1036,6 @@ body {
   resize: none;
 }
 .rm-title-textarea::-webkit-input-placeholder {
-  color: #ced9e0;
-}
-.rm-title-textarea:-moz-placeholder {
-  /* Firefox 18- */
-  color: #ced9e0;
-}
-.rm-title-textarea::-moz-placeholder {
-  /* Firefox 19+ */
   color: #ced9e0;
 }
 .rm-title-textarea:-ms-input-placeholder {
@@ -1205,7 +1081,7 @@ body {
 #buffer {
   display: flex;
   flex-direction: column;
-  z-index: 10000; /*RR change: make sure the help menu popup always appears on top*/
+  z-index: 10000;
 }
 #buffer .help-title {
   color: #f5f8fa;
@@ -1231,18 +1107,16 @@ body {
 .roam-table th,
 .roam-table td,
 .roam-table tr {
-  /*font-size: 12px;*/
   min-width: 100px;
   max-height: 20px;
   padding: 8px 16px;
   margin: 0;
-  /*border: 1px solid grey;*/
-  font-size: 0.9em; /*RR change: font size*/
-  border: 1px solid var(--table-border); /*RR change: darken border*/
-  font-family: var(--main-font); /*RR change: theme font*/
+  font-size: 0.9em;
+  border: 1px solid var(--table-border);
+  font-family: var(--main-font);
 }
 .roam-table div {
-  font-family: var(--main-font); /*RR change: theme font*/
+  font-family: var(--main-font);
 }
 .roam-table td {
   max-height: 20px;
@@ -1300,12 +1174,10 @@ body {
   font-size: 7px;
 }
 .CodeMirror {
-  /* font-family: monospace; */
-  font-family: var(--code-font); /*RR change: added theme font*/
+  font-family: var(--code-font);
 }
 .CodeMirror .CodeMirror-code pre {
-  /* font-family: monospace; */
-  font-family: var(--code-font); /*RR change: added theme font*/
+  font-family: var(--code-font);
   box-shadow: none;
 }
 .block-mention {
@@ -1324,30 +1196,24 @@ body {
   text-decoration: underline;
 }
 .rm-page-ref-tag {
-  /*color: #a7b6c2;*/
-  color: var(--tag-font-color); /*RR change: theme color*/
+  color: var(--tag-font-color);
   border-radius: var(--tag-radius);
   padding: var(--tag-padding);
 }
-
-/*RR change: added tag hover style*/
 .rm-page-ref-tag:hover,
 span.rm-page-ref.rm-page-ref-tag:hover {
   color: var(--tag-font-color-hover) !important;
   background-color: var(--tag-hover-bg);
   text-decoration: none;
-
 }
 .rm-page-ref-brackets {
-  /*color: #a7b6c2;*/
-  color: var(--page-brackets); /*RR change: fade back the brackets in regular text*/
+  color: var(--page-brackets);
 }
 .rm-page-ref-link-color {
-  /*color: #106ba3;*/
-  color: var(--page-link-color); /*RR change: theme color*/
+  color: var(--page-link-color);
 }
 
-/*RR change: added option to change the ref link color on Daily Notes page */
+/* Ref link color on Daily Notes */
 .roam-log-page .rm-page-ref-link-color {
   color: var(--daily-notes-link-color);    
 }
@@ -1355,12 +1221,10 @@ span.rm-page-ref.rm-page-ref-tag:hover {
   color: green;
 }
 .rm-block-ref {
-  padding: 2px 2px; /*RR change: reduced top and bottom padding*/
+  padding: 2px 2px;
   margin: -4px 0;
   display: inline;
-  /* border-bottom: 0.5px solid #d8e1e8; */
   cursor: alias;
-  /*RR change: keep the references blocks the same size*/
   border-bottom: 1px solid var(--block-ref-border);
   font-size: var(--block-ref-font-size);
   background-color: var(--block-ref-bg);
@@ -1369,8 +1233,6 @@ div.rm-block-ref {
   font-family: var(--main-font);
 }
 .rm-block-ref:hover {
-  /*background-color: #f5f8fa;*/
-  /*RR change: match other hover styles*/
   background-color: var(--block-ref-hover-bg);
   color: var(--block-ref-hover);
 }
@@ -1386,9 +1248,8 @@ div.rm-block-ref {
   -ms-user-select: none;
   user-select: none;
   vertical-align: bottom;
-  /*top: -6px;*/ /*RR change: disabled so 'global setting' a the start of the file will work*/
 }
-/* Hide the browser's default checkbox */
+/* Hide default checkbox */
 .check-container input {
   position: absolute;
   opacity: 0;
@@ -1396,7 +1257,7 @@ div.rm-block-ref {
   height: 0;
   width: 0;
 }
-/* Create a custom checkbox */
+/* Custom checkbox */
 .checkmark {
   position: absolute;
   top: 0px;
@@ -1404,11 +1265,9 @@ div.rm-block-ref {
   height: 12px;
   border-radius: 2px;
   width: 12px;
-  /*border: 1px solid #a7b6c2;*/
-  border: 1px solid var(--checkmark-color); /*RR change: added blue border*/
+  border: 1px solid var(--checkmark-color);
 }
-/* On mouse-over, add a grey background color */
-/* When the checkbox is checked, add a blue background */
+/* Background: mouse-over=grey; checked=blue */
 .check-container input:checked ~ .checkmark {
   background-color: var(--checkmark-color);
   border: none;
@@ -1435,21 +1294,16 @@ div.rm-block-ref {
   -ms-transform: rotate(45deg);
   transform: rotate(40deg) scale(0.8);
 }
-
-/*RR change: align checkboxes in zoomed-in headings */
-
 .rm-level1 label.check-container {
   margin-bottom: 17px;
   margin-right: -3px;
 }
-
 #roam-sidebar-logo a {
   text-decoration: none;
 }
 #roam-sidebar-logo:hover {
   background-color: #10161a;
 }
-/* RR change: more subtle logo */
 #roam-sidebar-logo img,
 #roam-sidebar-logo span {
   opacity: 0.4;
@@ -1474,13 +1328,11 @@ div.rm-block-ref {
   font-weight: bold;
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
-  /*color: #0d8050;*/
-  color: var(--new-page-color); /*RR change: theme color*/
+  color: var(--new-page-color);
 }
 .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
   word-break: break-word;
-  /* color: #8a9ba8;  */
-  color: var(--search-body-font-color); /*RR change: this is the search results body text color*/
+  color: var(--search-body-font-color);
   overflow-wrap: break-spaces;
   margin-left: -20px;
 }
@@ -1493,8 +1345,7 @@ div.rm-block-ref {
   font-weight: bold;
 }
 .rm-pages-row-highlight {
-  /*background-color: #f5f8fa;*/
-  background-color: var(--pages-row-highlight); /*RR change: dark alternating row color*/
+  background-color: var(--pages-row-highlight);
 }
 .rm-pages-row {
   display: flex;
@@ -1502,13 +1353,13 @@ div.rm-block-ref {
   justify-content: space-between;
   align-items: flex-start;
 }
-.rm-pages-row:first-child { /*RR change: Table Header*/
+.rm-pages-row:first-child { /* Table Header*/
   background-color: var(--pages-header-row) !important;
 }
-.rm-pages-row .rm-pages-title-col a strong { /*RR change: Page Title*/
+.rm-pages-row .rm-pages-title-col a strong { /* Page Title*/
   color: var(--page-link-color) !important;
 }
-.rm-pages-row .rm-pages-title-col a strong:hover { /*RR change: Page Title*/
+.rm-pages-row .rm-pages-title-col a strong:hover { /* Page Title*/
   text-decoration: underline;
 }
 .rm-pages-row .rm-pages-sort-header {
@@ -1543,38 +1394,31 @@ div.rm-block-ref {
   margin-right: 8px;
   flex: 1 1 100%;
   word-break: break-word;
-  /*background-color: #f5f8fa;*/
   padding-right: 8px;
-  /*RR change: background color and spacing*/
   background-color: var(--reference-item-bg);
   border-radius: 7px;
   padding: 10px;
 }
 
-/*RR change: reference item page link font*/
+/* Reference item page link font */
 .rm-reference-item div {
   font-family: var(--main-font);
 }
 
-/*RR change: adjusting disclosure arrow position for references*/
+/* Arrow position for references */
 .rm-reference-item .controls .block-expand {
   margin-top: 0;
 }
 
-/*RR change: reference font*/
+/* Reference font */
 div.rm-reference-container {
   font-family: var(--main-font);
-  margin-bottom: 2em; /*RR change: give a little breathing room for the unreferenced links section*/
+  margin-bottom: 2em;
 }
 .rm-level1 {
-  /*font-family: 'Inter', sans-serif;*/
   font-weight: 400;
   font-size: 1.6em;
-  /* color: var(--h1-font-color); */
-  font-family: var(--main-font); /*RR change: font change*/
-  /* background-color: var(--h1-bg); */
-  /* padding-left: 10px; */
-  /* margin-top: -4px !important; */
+  font-family: var(--main-font);
 }
 .rm-level1 textarea {
   line-height: 1.2;
@@ -1586,17 +1430,14 @@ div.rm-reference-container {
   font-size: 1.6em;
 }
 .rm-level2 {
-  /* font-family: 'Inter', sans-serif !important; */
   font-weight: 400;
   font-size: 1.3em;
   font-family: var(--main-font);
   color: var(--h2-font-color);
-  /* margin-top: -5px !important; */
 }
 .rm-level2 textarea {
   line-height: 1.2;
   margin-top: 3px;
-  /* font-size: 1.4em; */
 }
 .rm-level2 .rm-block-text {
   font-size: 1.6em;
@@ -1604,36 +1445,33 @@ div.rm-reference-container {
 .rm-level3 {
   font-weight: 700;
   font-size: 1.1em;
-  /* color: #5c7080; */
-    color: var(--h3-font-color);
+  color: var(--h3-font-color);
   font-family: var(--main-font);
 }
 .rm-level3 textarea {
   line-height: 1.2;
   margin-top: 2px;
-  /* font-size: 1.2em; */
-  /* font-weight: normal; */
 }
 
-/*RR change: Header styles*/
+/* Header styles */
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  /* padding-left: 10px; */
-  margin-top: -4px !important;
+  padding-left: 0px;
+  margin-top: 0px !important;
 }
 .roam-app h2 {
   /* color: var(--h2-font-color); */
   /* background-color: var(--h1-bg); */
-  /* padding-left: 10px; */
-  margin-top: -5px !important;
+  padding-left: 0px;
+  margin-top: 0px !important;
 }
 .roam-app h3 { 
-  /* font-weight: bold; */
   /* color: var(--h3-font-color); */
   /* background-color: var(--h1-bg); */
-  /* padding-left: 10px; */
-  margin-top: 3px !important;
+  font-weight: bold;
+  padding-left: 0px;
+  margin-top: 0px !important;
 }
 
 .rm-title1 {
@@ -1710,11 +1548,10 @@ div.rm-reference-container {
   padding: 2px;
 }
 .roam-highlight {
-  /* background-color: #fef09f; */
   margin: -2px;
   padding: 2px;
   background-color: var(--highlight-background-color);
-  color: var(--highlight-font-color); /*RR change: invert the highlighted text color*/
+  color: var(--highlight-font-color);
 }
 .roam-highlight .rm-page-ref-link-color {
   color: var(--highlight-link-color);
@@ -1728,11 +1565,9 @@ div.rm-reference-container {
 }
 .rm-encrypted-block {
   font-weight: 300;
-  /* color: #8a9ba8; */
   color: var(--encrypted-font-color);
   font-size: 12px;
   border-radius: 4px;
-  /* background-color: #f5f8fa; */
   background-color: var(--encrypted-bg);
   padding: 2px 4px;
   display: inline;
@@ -1748,12 +1583,10 @@ div.rm-reference-container {
   grid-template-rows: 1fr 1fr 1fr;
 }
 .roam-bullet-closed {
-  /*background-color: #ced9e0;*/
-  background-color: var(--bullet-closed); /*RR change: orange color to match open bullets*/
+  background-color: var(--bullet-closed);
 }
 #right-sidebar .roam-bullet-closed {
-  /*background-color: #a7b6c2;*/
-  background-color: var(--bullet-closed); /*RR change: orange color to match open bullets*/
+  background-color: var(--bullet-closed);
 }
 #right-sidebar .rm-reference-main {
   border: none;
@@ -1851,7 +1684,6 @@ div.rm-reference-container {
 }
 #mobile-capture li {
   background-color: #f5f8fa;
-  line-style-position: outside;
   padding: 8px;
 }
 #mobile-capture li div {
@@ -1911,16 +1743,15 @@ div.rm-reference-container {
   height: 10px;
 }
 .rm-saving-icon .rm-saving-local {
-  /* background-color: #99280f; */
-  background-color: var(--saving-local); /*RR change: added variable*/
+  background-color: var(--saving-local);
 }
 .rm-saving-icon .rm-saving-remote {
   background-color: #d9822b;
-  background-color: var(--saving-remote); /*RR change: added variable*/
+  background-color: var(--saving-remote);
 }
 .rm-saving-icon .rm-synced {
   background-color: #0f9960;
-  background-color: var(--synched); /*RR change: added variable*/
+  background-color: var(--synched);
   }
 .rm-theme-selector div {
   padding: var(--s1);
@@ -1934,25 +1765,18 @@ div.rm-reference-container {
   font-size: 40px;
   color: #444444;
   letter-spacing: normal;
-  /*-ms-font-feature-settings:    'ss20' 1;*/
 }
-
-/*RR change: added missing styles*/
 .level2 {
-  /* font-family: Roboto,sans-serif; */
   font-family: var(--main-font);
   font-weight: 200;
   font-size: 26px;
-  /* color: rgba(0,0,0,1); */
   color: var(--h2-font-color);
   letter-spacing: .001em;
 }
 .level3 {
-  /* font-family: Roboto,sans-serif; */
   font-family: var(--main-font);
   font-weight: 500;
   font-size: 15px;
-  /* color: rgba(68,68,68,1); */
   color: var(--h3-font-color);
   letter-spacing: .002em;
 }
@@ -2030,20 +1854,17 @@ div.rm-reference-container {
   background-color: #ced9e0;
 }
 .block-highlight-blue {
-  /*background-color: #7cccff;*/
-  background-color: var(--block-highlight); /*RR change: Darker Blue for readability*/
+  background-color: var(--block-highlight);
 }
 .block-highlight-yellow {
-  /* background-color: yellow; */
-  background-color: var(--block-highlight-bg); /*RR change: added variable*/
+  background-color: var(--block-highlight-bg);
 }
 .block-bullet-view {
   flex: 1 1 100%;
   margin-left: 5px;
 }
 .block-border-left {
-  /*border-left: 1px solid #bfccd6;*/
-  border-left: 1px solid var(--bullet-outline); /*RR change: lighter bullet tree outline*/
+  border-left: 1px solid var(--bullet-outline);
 }
 .text-align-left {
   text-align: left;
@@ -2059,7 +1880,6 @@ div.rm-reference-container {
 }
 .roam-block {
   min-height: calc(1.5em + 8px);
-  /* min-height: 1.5em; */
   box-sizing: border-box;
   white-space: pre-wrap;
   overflow-wrap: break-word;
@@ -2071,8 +1891,6 @@ div.rm-reference-container {
   padding-top: 4px;
   padding-bottom: 4px;
 }
-/*RR change: theme font catch-all*/
-/* div.roam-block { */
 .roam-block {
   font-family: var(--main-font);
   font-size: var(--main-font-size);
@@ -2084,11 +1902,8 @@ div.rm-reference-container {
   box-sizing: border-box;
 }
 .rm-block-text {
-  /*max-width: 520px;*/
-  max-width: 100%; /*RR change: make references as wide as possible*/
+  max-width: 100%;
 }
-/*RR change: Theme body font settings*/
-/* div.rm-block-text { */
 .rm-block-text {
   font-family: var(--main-font);
   font-size: var(--main-font-size);
@@ -2100,14 +1915,11 @@ div.rm-reference-container {
   overflow-wrap: break-spaces;
   vertical-align: top;
   margin-top: -1px;
-  /* background-color: transparent; */
   padding-top: 4px;
   padding-bottom: 4px;
   letter-spacing: inherit;
   border: none;
   resize: none;
-  /*RR change: added a highlight color*/
-  /*color: #bbb;*/
   background-color: var(--current-block-highlight);
   padding-left: 5px;
   padding-right: 5px;
@@ -2117,9 +1929,8 @@ div.rm-reference-container {
 .controls {
   display: flex;
   flex: 0 0 40px;
-  /* padding-top: 4px; */
   padding-left: 4px;
-  padding-top: 2px; /*RR change: slight adjustment for bullet position*/
+  padding-top: 2px;
 }
 .controls .block-expand {
   transform: scale(1);
@@ -2150,8 +1961,7 @@ div.rm-reference-container {
   display: flex;
   height: 13px;
   width: 13px;
-  /* margin-top: 3px; */
-  margin-top: var(--bullet-position); /*RR change: added variable for adjustment*/
+  margin-top: var(--bullet-position);
   border-radius: 50%;
   justify-content: center;
   align-items: center;
@@ -2160,8 +1970,7 @@ div.rm-reference-container {
   border-radius: 50%;
   width: 5px;
   height: 5px;
-  /*background-color: #394b59;*/
-  background-color: var(--bullet); /*RR change: dark orange bullet*/
+  background-color: var(--bullet);
 }
 .version-bullet {
   background-color: #a7b6c2;
@@ -2228,10 +2037,8 @@ div.rm-reference-container {
   background-color: #bfccd6;
 }
 .block-ref-count-button {
-  /* font-size: 0.8em; */
-  /* opacity: 0.5; */
   cursor: pointer;
-  font-size: var(--ref-count-font-size); /*RR change: added variable*/
+  font-size: var(--ref-count-font-size);
 }
 .rm-grey-text {
   color: #8a9ba8;
@@ -2267,11 +2074,6 @@ div.rm-reference-container {
   text-align: left;
   text-shadow: none;
 }
-/* .tags-input:focus { */
-  /* box-shadow: 0 0 5px rgba(81, 203, 238, 1); */
-  /* border: 2px solid white; */
-  /* border-bottom-color: #448cca; */
-/* } */
 .tags-output {
   display: inline-block;
   margin-left: 4px;
@@ -2317,7 +2119,7 @@ textarea {
   margin: 0px;
   padding: 0px;
 }
-/*RR change: slight reduction in size for the textarea*/
+
 #right-sidebar .rm-reference-item textarea {
 font-size: 1.0em;
 }
@@ -2380,7 +2182,7 @@ font-size: 1.0em;
 /* --------------------------------------------------------------------------- */
 
 
-/*RR change: Icon color*/
+/* Icon color*/
 .bp3-button .bp3-icon, 
 .bp3-button .bp3-icon-standard, 
 .bp3-button 
@@ -2409,12 +2211,10 @@ font-size: 1.0em;
   box-shadow: none;
   background-color: transparent;
   background-image: none;
-  /* color: #999; */
   color: var(--icon-color);
   font-weight: 700;
 }
 .bp3-button:not([class*="bp3-intent-"]):hover {
-  /* background-color: rgba(167,182,194,0.3); */
   background-color: var(--icon-bg-hover);
   color: var(--icon-color-hover);
 }
@@ -2424,7 +2224,6 @@ font-size: 1.0em;
   color: var(--icon-color);
 }
 .bp3-button.bp3-small:not([class*="bp3-minimal"]):hover {
-  /* background-color: rgba(167,182,194,0.3); */
   background-color: var(--icon-bg-hover);
   color: var(--icon-color-hover);
 }
@@ -2433,66 +2232,47 @@ font-size: 1.0em;
     color: inherit;
 }
 
-/*bp3-button bp3-minimal bp3-small bp3-icon-standard bp3-icon-menu-open
-bp3-button bp3-minimal bp3-icon-star bp3-small
-bp3-button bp3-small block-ref-count-button*/
 
-/*RR change: override ellipsis text and word wrap instead*/
-/*.bp3-text-overflow-ellipsis {
-    text-overflow: unset;
-    white-space: unset;
-}*/
+/* Roam Search Bar */
 
-
-/*RR change: Roam Search Bar*/
-
-/* Roam Search Box Placeholder Text Color */
+/* >Roam Search Box Placeholder Text Color */
 .bp3-input::placeholder,
 .bp3-input-group > .bp3-icon {
     color: var(--search-font-color);
 }
-
-/* Input Text Color */
+/* >Input Text Color */
 .bp3-input {
   color: var(--popover-font-color);
 }
-
-/* Roam Search Box Field and Border */
+/* >Roam Search Box Field and Border */
 .bp3-input,
 .bp3-input[readonly]{ 
   background: var(--search-bg);
-  /* box-shadow: inset 0 0 0 1px var(--search-outline); */
   box-shadow: none;
   font-size: 0.85em;
 }
 .bp3-input:focus, .bp3-input.bp3-active {
-  /* -webkit-box-shadow: 0 0 0 1px #137cbd, 0 0 0 3px rgba(19,124,189,0.3), inset 0 1px 1px rgba(16,22,26,0.2); */
   box-shadow: 0 0 0 1px var(--search-outline);
-  /* -webkit-box-shadow: none; */
-  /* box-shadow: none; */
   border: var(--search-outline);
 }
-/*RR change: additional text styles*/
+/* >Additional text styles*/
 .roam-app strong {
   color: var(--strong) !important;
 }
-
 .roam-app em {
   color: var(--emphasis);
 }
 
-/*RR change: Markdown Links */
 
+/* Markdown Links */
 .roam-app a {
   color: var(--external-link-color);
 }
-
 .roam-app a:focus, 
 .roam-app a:hover {
   color: var(--external-link-color);
   text-decoration: underline;
 }
-
 #roam-right-sidebar-content a {
   color: var(--sidebar-link-color);
 }
@@ -2508,14 +2288,15 @@ hr {
   border-top: 1px solid var(--hr);
 }
 
-/*RR change: Sidebar modifications*/
+
+/* Right sidebar modifications*/
 #right-sidebar {
   background-color: var(--right-sidebar-bg) !important;
 }
-
 #all-pages-search div {
   font-family: var(--main-font);
 }
+
 
 /* Context Menus */
 .bp3-popover .bp3-popover-content,
@@ -2524,28 +2305,24 @@ hr {
   color: var(--popover-font-color);
   border-radius: 4px;
 }
-
 .bp3-popover .bp3-popover-arrow-fill {
     fill: var(--popover-bg);
 }
-
 .bp3-datepicker {
   background-color: var(--datepicker-bg);
 }
-
 .bp3-datepicker .DayPicker-Day.DayPicker-Day--isToday .bp3-datepicker-day-wrapper {
     border: 1px solid var(--datepicker-day-wrapper);
 }
-
 .bp3-html-select.bp3-minimal select {
   color: var(--popover-font-color);
   background-color: var(--select-bg);  
 }
 
+
 /* Slash Popup */
 div.bp3-elevation-3 {
-  /* color: #1775db; */
-  color: var(--popover-font-color);
+    color: var(--popover-font-color);
   background-color: var(--inline-search-bg) !important;
   font-size: 0.85em;
   border-radius: 4px;
@@ -2553,17 +2330,16 @@ div.bp3-elevation-3 {
               0 2px 15px #222;
 }
 [title~=Search] {
-  color: #1775db !important; /*RR change: Bi-directional place holder text*/
-  color: var(--popover-font-color) !important; /*RR change: Bi-directional place holder text*/
+  color: #1775db !important; /* Bi-directional place holder text*/
+  color: var(--popover-font-color) !important; /* Bi-directional place holder text*/
 }
 .bp3-elevation-3 .dont-unfocus-block[style*="background-color: rgb(213, 218, 223);"],
 .bp3-popover-content .rm-menu-item[style*="background-color: rgb(213, 218, 223);"]  {
-  background-color: var(--search-selected-row) !important;    
-/*filter: invert(100%); /*RR change: Inverts the colors of the / and link search menus*/
-
+  background-color: var(--search-selected-row) !important;
 }
 
-/*RR change: generic class for a transparent background*/
+
+/* Generic class for a transparent background*/
 .trans {
   background-color: transparent;
 }
@@ -2572,11 +2348,11 @@ div.bp3-elevation-3 {
   margin-bottom: 2em;
 }
 
-/*RR change: Breadcrumb navigation background color override*/
+
+/* Breadcrumb navigation background color override*/
 .parent-path-wrapper div div {
   background-color: transparent !important;
 }
-
 blockquote {
   font-size: 1em;
   border-left: 5px solid var(--blockquote-border-color);
@@ -2590,77 +2366,19 @@ blockquote {
   text-align: justify;
   text-justify: inter-word;
 }
-
 blockquote .small, blockquote footer, blockquote small {
     display: block;
     font-size: 80%;
     line-height: 1.42857143;
     color: var(--blockquote-cite);
 }
-
 select {
   background-color: var(--select-bg) !important;
   border-color: var(--search-outline);
 }
 
-/*RR change: This section contains a series of very specific overrides that are extremely fragile and will probably break with any minor update*/
 
-/*RR change: Super fragile override for Block embeds to change the background color and font-size*/
-
-div[style^='overflow: hidden; margin-left: -8px; background-color: rgb(235, 241, 245); margin-top: -4px;']{
-  background-color: var(--block-embed-bg) !important;
-  /* font-size: var(--block-embed-font-size); */
-}
-
-/*RR change: Very fragile override for alias styes, will probably break*/
-span[style^='background-color: rgb(235, 241, 245); border-radius: 4px; cursor: alias; color: rgb(245, 86, 86); padding: 4px 6px;'] {
-  background-color: var(--alias-bg) !important;
-  border-radius: 0 !important;
-  cursor: alias;
-  color: var(--alias-font-color) !important;
-  padding: 0 !important;
-}
-
-/*RR change: Very fragile override for the filter icon backgroung when a filter is applied*/
-/* these might already be broken */
-span[style*='background-color: red;'] {
-  background-color: var(--filter-bg-subtract) !important;
-}
-span[style*='background-color: green;'] {
-  background-color: var(--filter-bg-add) !important;
-}
-
-/*RR change: Very fragile overrides for a page embed*/
-.roam-block div[style*="background-color: rgb(235, 241, 245);" ] {
-  background-color: var(--reference-item-bg) !important;
-  /* font-size: 0.8em; */
-  padding: 10px;
-  padding-top: 17px;
-}
-.roam-block div[style*="background-color: rgb(235, 241, 245);" ] .bp3-button {
-  margin-top: -7px;
-}
-.roam-block div[style*="background-color: rgb(235, 241, 245);" ] h2 {
-background-color: transparent;
-}
-
-.bp3-button.bp3-intent-primary {
-    -webkit-box-shadow: inset 0 0 0 1px rgba(16,22,26,0.4), inset 0 -1px 0 rgba(16,22,26,0.2);
-    box-shadow: inset 0 0 0 1px rgba(16,22,26,0.4), inset 0 -1px 0 rgba(16,22,26,0.2);
-    background-color: var(--checkmark-color);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(rgba(255,255,255,0.1)),to(rgba(255,255,255,0)));
-    background-image: linear-gradient(to bottom,rgba(255,255,255,0.1),rgba(255,255,255,0));
-    color: #fff;
-}
-
-.bp3-button.bp3-intent-primary:hover {
-    -webkit-box-shadow: inset 0 0 0 1px rgba(16,22,26,0.4), inset 0 -1px 0 rgba(16,22,26,0.2);
-    box-shadow: inset 0 0 0 1px rgba(16,22,26,0.4), inset 0 -1px 0 rgba(16,22,26,0.2);
-    background-color: var(--checkmark-color);
-    opacity: 80%;
-}
-
-/*RR change: Diagram styles*/
+/* Diagram styles*/
 div[style*="position: absolute;background-color: white;border: 1px solid lightgrey;border-radius: 0px 0px 4px;padding: 5px;top: 0px;left: 0px;"], 
 div[style*="position: absolute; background-color: white; border: 1px solid lightgrey; border-radius: 0px 0px 4px; padding: 5px; top: 0px; left: 0px;"] 
 {
@@ -2668,7 +2386,6 @@ div[style*="position: absolute; background-color: white; border: 1px solid light
   border-color: var(--kanban-card-bg) !important;
 }
 .roam-body .roam-app svg div{
-  /* color: var(--strong); */
     color: #202b33;
 }
 svg .rm-page-ref-link-color {
@@ -2678,7 +2395,8 @@ svg .rm-page-ref-brackets {
   color: #a7b6c2;
 }
 
-/*RR change: dialog window styles*/
+
+/* Dialog window styles*/
 .bp3-dialog {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2718,9 +2436,10 @@ button[style*="background-color: rgba(72, 176, 240, 0.5);"]{
   border: 1px solid var(--icon-color) !important;
 }
 
-/*RR change: Codemirror adjustments*/
 
-/* RR Change: single backtick code snippets */
+/* Codemirror adjustments*/
+
+/* Single backtick code snippets */
 code { 
     background-color: var(--code-bg);
     border-radius: 3px;
@@ -2730,7 +2449,6 @@ code {
     font-family: var(--code-font);
     font-size: var(--code-font-size);
 }
-
 div.CodeMirror .CodeMirror-code pre {
   font-family: var(--code-font);
   line-height: 1.5em;
@@ -2757,22 +2475,22 @@ span.cm-string {color: #ffc66d;}
 span.cm-variable-2 {color: #a5c261;}
 span.cm-variable {color: #6d9cbe;}
 span.cm-def {color: #cc7833;}
-span.cm-error {/*background: #da4939;*/ color: #da4939;}
+span.cm-error {color: #da4939;}
 span.cm-bracket {color: #f4f1ed;}
 span.cm-tag {color: #da4939;}
 span.cm-link {color: #b6b3eb;}
 
 
-/*RR change: Added styles*/
-
 /* .CodeMirror-matchingbracket { text-decoration: underline; color: white !important;} */
 .CodeMirror-matchingbracket { outline:1px solid #ff9c3a; color:#fff !important; }
 .CodeMirror-activeline-background { background: #5a5acc; }
 
+
 /*<!--activeline-->*/
 .CodeMirror-activeline-background { background: #253540; }
 
-./*CodeMirror pre {background: var(--code-bg);}*/
+
+/*.CodeMirror pre {background: var(--code-bg);}*/
 .CodeMirror-lines {background: var(--code-bg);}
 .CodeMirror-activeline pre {background: #253540; /* SPM ADDED */}
 
