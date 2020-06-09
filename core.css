@@ -168,7 +168,7 @@ div.roam-center > div:first-child {
 
 /* ----------------------------------------- */
 
-/*RR change: decrease the line spacing in the breadcrumbs for referenced items*/
+/* Decrease the line spacing in the breadcrumbs for referenced items*/
 .zoom-mentions-view span {
 padding-top: 0 !important;
 padding-bottom: 0 !important;
@@ -176,7 +176,7 @@ padding-bottom: 0 !important;
 
 
 /* ----------------------------------------- */
-/* RR change: QUERIES - Query results options */
+/* QUERIES - Query results options */
 
 /* Show empty query message */
 .rm-block-text .rm-reference-main .rm-mentions:empty:after {
@@ -204,12 +204,12 @@ padding-bottom: 0 !important;
   color: var(--breadcrumb-color);
 }
 
-/*RR change: HIDE QUERY SCRIPT - Comment/uncomment to hide the original query and revert back to legacy behavior */
+/* HIDE QUERY SCRIPT - Comment/uncomment to hide the original query and revert back to legacy behavior */
 .rm-query .rm-query-title {
   display: none;
 }
 
-/* RR change: MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
+/* MINIMIZE QUERIES: add any one of the following tags before the beginning of your query (in the same block):
     #min-title = hides the page reference link / page title
     #min-con = hides the contextual reference information (breadcrumbs)
     #minimal = hides both the title and the context
@@ -246,7 +246,7 @@ display:none!important; /* hide page reference (title) */
 
 /* ----------------------------------------- */
 
-/*RR change: CUSTOM TAGS: Uncomment to create custom styles for specific tags. Change "Meeting" to match some portion of the title of the tag you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new tag to be customized */
+/* CUSTOM TAGS: Uncomment to create custom styles for specific tags. Change "Meeting" to match some portion of the title of the tag you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new tag to be customized */
 
 /* 
 span[data-tag*="Meeting"] {
@@ -259,7 +259,7 @@ span[data-tag*="Meeting"] {
  */
 
 
- /*RR change: CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized*/
+ /* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized*/
 
 /* 
 span[data-link-title*="Theme"] .rm-page-ref-link-color {
@@ -274,7 +274,7 @@ span[data-link-title*="Theme"] .rm-page-ref-link-color {
 
 /* ----------------------------------------- */
 
-/*RR change: ATTRIBUTE STYLES: Uncomment and customize this section to style all attributes */
+/* ATTRIBUTE STYLES: Uncomment and customize this section to style all attributes */
 /*
 .roam-block span strong[style*='cursor: pointer;'] {
     color: #9C27B0 !important;
@@ -283,7 +283,7 @@ span[data-link-title*="Theme"] .rm-page-ref-link-color {
 
 /* ----------------------------------------- */
 
-/*RR change: DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
+/* DEFAULT TEXT - a small addition to the placeholder text to Daily Notes or Pages to help get you started */
 div#block-input-ghost span:before {
   content: "Cmd+enter or ";
 }
@@ -296,7 +296,7 @@ div#block-input-ghost span:before {
 
 /* ----------------------------------------- */
 
-/*POMODORO - Comment/un-comment this section to apply custom styling to the the Pomodoro timer */
+/* POMODORO - Comment/un-comment this section to apply custom styling to the the Pomodoro timer */
 /* ------------- Red Pomodoro ------------- */
 /*
 .rm-pomodoro {
