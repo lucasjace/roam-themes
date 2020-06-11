@@ -62,7 +62,7 @@
   --icon-color: #e78924;
   --icon-bg-hover: rgba(167,182,194,0.3);
   --icon-color-hover: #e78924;
-  --hr: rgba(28, 225, 61, 0.2);
+  --hr: rgba(28, 225, 61, 0.075);
   --code-bg: #333;
   --checkmark-color: #137cbd;
   --pages-row-highlight: #292929;
@@ -1374,7 +1374,7 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  font-size: 1.8em;
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
@@ -1382,7 +1382,7 @@ div.rm-reference-container {
 .roam-app h2 {
   /* color: var(--h2-font-color); */
   /* background-color: var(--h2-bg); */
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
@@ -1390,7 +1390,7 @@ div.rm-reference-container {
 .roam-app h3 { 
   /* color: var(--h3-font-color); */
   /* background-color: var(--h3-bg); */
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
