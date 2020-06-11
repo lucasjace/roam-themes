@@ -62,7 +62,7 @@
   --icon-color: #e78924;
   --icon-bg-hover: rgba(167,182,194,0.3);
   --icon-color-hover: #e78924;
-  --hr: rgba(12, 66, 21, 0.075);
+  --hr: rgba(10, 50, 15, 0.075);
   --code-bg: #333;
   --checkmark-color: #137cbd;
   --pages-row-highlight: #292929;
@@ -104,10 +104,6 @@
   
   --encrypted-font-color:#ff6000;
   --encrypted-bg:#353535;
-  
-  --emoji-bg: #2d2d2d;
-  --emoji-border: rgba(225, 117, 28, 0.40);
-  --emoji-color: #aaa;
 
   --no-query-results: "Query returned no results";
   --no-query-results-color: #FC5963;
@@ -1374,7 +1370,7 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
@@ -1382,7 +1378,7 @@ div.rm-reference-container {
 .roam-app h2 {
   /* color: var(--h2-font-color); */
   /* background-color: var(--h2-bg); */
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
@@ -1390,7 +1386,7 @@ div.rm-reference-container {
 .roam-app h3 { 
   /* color: var(--h3-font-color); */
   /* background-color: var(--h3-bg); */
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
