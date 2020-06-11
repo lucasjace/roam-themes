@@ -1370,16 +1370,14 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  font-size: 1.3em;
-  font-weight: bold;
+  font-size: 1.2em;
   padding-left: 0px;
   margin-top: 0px !important;
 }
 .roam-app h2 {
   /* color: var(--h2-font-color); */
   /* background-color: var(--h2-bg); */
-  font-size: 1.2em;
-  font-weight: bold;
+  font-size: 1.15em;
   padding-left: 0px;
   margin-top: 0px !important;
 }
