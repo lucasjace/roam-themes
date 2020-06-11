@@ -67,7 +67,7 @@
   --checkmark-color: #137cbd;
   --pages-row-highlight: #292929;
   --pages-header-row: #2d2d2d;
-  --reference-item-bg: rgba(125, 220, 155, 0.175);
+  --reference-item-bg: rgba(125, 220, 155, 0.2);
   --bullet: rgba(88, 88, 88, 0.4);
   --bullet-closed: rgba(78, 110, 93, 0.5);
   --bullet-outline: #404040;
@@ -1370,21 +1370,21 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  font-size: 1.2em;
+  font-size: 1.15em;
   padding-left: 0px;
   margin-top: 0px !important;
 }
 .roam-app h2 {
   /* color: var(--h2-font-color); */
   /* background-color: var(--h2-bg); */
-  font-size: 1.15em;
+  font-size: 1.1em;
   padding-left: 0px;
   margin-top: 0px !important;
 }
 .roam-app h3 { 
   /* color: var(--h3-font-color); */
   /* background-color: var(--h3-bg); */
-  font-size: 1.1em;
+  font-size: 1.05em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
