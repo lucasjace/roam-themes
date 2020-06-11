@@ -62,12 +62,12 @@
   --icon-color: #e78924;
   --icon-bg-hover: rgba(167,182,194,0.3);
   --icon-color-hover: #e78924;
-  --hr: rgba(230, 255, 230, 0.025);
+  --hr: rgba(240, 255, 240, 0.025);
   --code-bg: #333;
   --checkmark-color: #137cbd;
   --pages-row-highlight: #292929;
   --pages-header-row: #2d2d2d;
-  --reference-item-bg: #78cf8456;
+  --reference-item-bg: rgba(125, 220, 155, 0.25);
   --bullet: rgba(88, 88, 88, 0.4);
   --bullet-closed: rgba(78, 110, 93, 0.5);
   --bullet-outline: #404040;
@@ -131,7 +131,7 @@
   border-radius: 2em;
   border: 2px solid #FC596370;
 }
-.rm-pomodoro::first-letter {
+.rm-pomodoro:first-letter {
   margin-right: 4px;
 }
 
