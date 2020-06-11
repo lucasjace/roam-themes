@@ -118,7 +118,7 @@
 
 /* CHECKBOX ALGINMENT - adjust the 'top' value to move the checkbox up or down to better align with the font selected above - the default font Inter uses -6px*/
 .check-container {
-  top: -4px; 
+  top: -7px; 
   padding-right: 3px;
 }
 
