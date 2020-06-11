@@ -68,8 +68,8 @@
   --pages-row-highlight: #292929;
   --pages-header-row: #2d2d2d;
   --reference-item-bg: #f2c98f1a;
-  --bullet: rgba(225, 117, 28, 0.30);
-  --bullet-closed: rgba(225, 117, 28, 0.70);
+  --bullet: rgba(88, 88, 88, 0.40);
+  --bullet-closed: rgba(88, 88, 88, 0.5);
   --bullet-outline: #404040;
   --bullet-position: 4px;
   --block-highlight: #00588e;
@@ -116,10 +116,10 @@
 
 /* ----------------------------------------- */
 
-/*CHECKBOX ALGINMENT - adjust the 'top' value to move the checkbox up or down to better align with the font selected above - the default font Inter uses -6px*/
+/* CHECKBOX ALGINMENT - adjust the 'top' value to move the checkbox up or down to better align with the font selected above - the default font Inter uses -6px*/
 .check-container {
-  top: -6px; 
-  padding-right: 4px;
+  top: -4px; 
+  padding-right: 3px;
 }
 
 /* ----------------------------------------- */
@@ -129,7 +129,7 @@
 .rm-pomodoro {
   background: var(--reference-item-bg) !important;
   color: #4CAF50 !important;
-  padding: 2px 12px;
+  padding: 2px 2px;
   line-height: 1.7em;
   font-weight: 600;
   border-radius: 2em;
