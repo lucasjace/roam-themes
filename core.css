@@ -84,13 +84,10 @@
   --datepicker-bg: transparent;
   --datepicker-day-wrapper: #d9822b7a;
 
-  /* fragile styles that may break with the next update */
-  --block-embed-bg: #3f3f3f;
-  --block-embed-font-size: 0.85em;
-  --alias-font-color: #FECF2B;
-  --alias-bg: transparent;
-  /*RR change: no longer needed? Already broken?*/
-  
+  /* Scrollbar settings - to disable set values to none */
+  --scrollbar-track: #2b2b2b;
+  --scrollbar-thumb: rgba(153, 153, 153, 0.1);
+     
   /* Misc */
   --kanban-board-bg: #333333;
   --kanban-column-bg: #454545;
@@ -115,11 +112,6 @@
   --no-query-results: "Query returned no results";
   --no-query-results-color: #FC5963;
   --query-results-border: #f2c98f1a;
-
-  /* Scrollbar settings - to disable set values to none */
-  --scrollbar-track: #2b2b2b;
-  --scrollbar-thumb: rgba(153, 153, 153, 0.1);
-  
 }
 
 /* ----------------------------------------- */
@@ -132,9 +124,26 @@
 
 /* ----------------------------------------- */
 
+/* ---------------- POMODORO ---------------- */
+ 
+.rm-pomodoro {
+  background: var(--reference-item-bg) !important;
+  color: #4CAF50 !important;
+  padding: 2px 12px;
+  line-height: 1.7em;
+  font-weight: 600;
+  border-radius: 2em;
+  border: 1px solid #FC596370;
+}
+.rm-pomodoro::first-letter {
+  margin-right: 4px;
+}
 
-/*SIDEBAR WIDTH (flex-basis = main column width)*/
+/* ----------------------------------------- */
 
+
+/* --------- SIDEBAR WIDTH ----------------- */
+/* flex-basis = main column width */
 .roam-center {
   flex-basis: 55% !important;
 }
