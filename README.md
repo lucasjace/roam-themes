@@ -1,4 +1,4 @@
-My current Roam Research theme
+Welcome to my current Roam Research theme!
 
 [Overview of custom themes in Roam](https://twitter.com/Conaw/status/1268426724254945280?s=20)
 
