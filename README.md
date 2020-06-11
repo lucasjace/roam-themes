@@ -6,4 +6,4 @@ To add this theme to your Roam, copy the line below to your `[[roam/css]]` page 
 
 @import url('https://lucasjace.github.io/roam-themes/core.css');
 
-![Roam Theme](https://lucasjace.github.io/roam-themes/roam_theme.png)
+![Roam Theme](https://lucasjace.github.io/roam-themes/screenshot.png)
