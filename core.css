@@ -39,7 +39,7 @@
   --block-ref-hover-bg:#111;
   --block-ref-font-size: 1.0em;
   --highlight-font-color: #222;
-  --highlight-background-color: #fef09f;
+  --highlight-background-color: #fdeb87d7;
   --highlight-link-color: #ff6000;
   --search-font-color: #af671c;
   --search-body-font-color: #8a9ba8;
@@ -62,19 +62,19 @@
   --icon-color: #e78924;
   --icon-bg-hover: rgba(167,182,194,0.3);
   --icon-color-hover: #e78924;
-  --hr: rgba(225, 117, 28, 0.50);
+  --hr: rgba(28, 225, 61, 0.2);
   --code-bg: #333;
   --checkmark-color: #137cbd;
   --pages-row-highlight: #292929;
   --pages-header-row: #2d2d2d;
-  --reference-item-bg: #f2c98f1a;
-  --bullet: rgba(88, 88, 88, 0.40);
-  --bullet-closed: rgba(88, 88, 88, 0.5);
+  --reference-item-bg: #78cf8456;
+  --bullet: rgba(88, 88, 88, 0.4);
+  --bullet-closed: rgba(78, 110, 93, 0.5);
   --bullet-outline: #404040;
   --bullet-position: 4px;
   --block-highlight: #00588e;
   --block-highlight-bg: rgba(0, 0, 0, 0.4);
-  --current-block-highlight: rgba(255, 255, 255, 0.05);
+  --current-block-highlight: rgba(255, 255, 255, 0.025);
   --search-outline: #e9892475;
   --search-bg: #252525;
   --search-selected-row: #4c4c4c;
@@ -129,11 +129,11 @@
 .rm-pomodoro {
   background: var(--reference-item-bg) !important;
   color: #4CAF50 !important;
-  padding: 2px 2px;
-  line-height: 1.7em;
+  padding: 2px 12px;
+  line-height: 1.2em;
   font-weight: 600;
   border-radius: 2em;
-  border: 1px solid #FC596370;
+  border: 2px solid #FC596370;
 }
 .rm-pomodoro::first-letter {
   margin-right: 4px;
@@ -258,96 +258,6 @@ div#block-input-ghost span:before {
 /* Start of standard Roam Styles */
 /* --------------------------------------------------------------------------------------- */
 
-
-.loading-astrolabe {
-  margin: auto;
-  position: relative;
-  width: 250px;
-  height: 250px;
-}
-.loading-astrolabe .wand {
-  position: absolute;
-  width: 80%;
-  top: 24.5%;
-  left: 10%;
-  animation: nav 3.5s linear infinite;
-}
-.loading-astrolabe .wand-small {
-  position: absolute;
-  width: 80%;
-  top: 24.5%;
-  left: 11.5%;
-}
-.loading-astrolabe .background {
-  width: 100%;
-  border: none;
-  margin-left: -3px;
-}
-.spinner-astrolabe {
-  margin: auto;
-  margin-top: 100px;
-  position: relative;
-  width: 200px;
-  height: 200px;
-}
-.spinner-astrolabe .wand {
-  position: absolute;
-  width: 80%;
-  top: 24.5%;
-  left: 10%;
-  animation: nav 3.5s linear 20s;
-}
-.spinner-astrolabe .wand:hover {
-  animation: nav 3.5s linear infinite;
-}
-.spinner-astrolabe .wand-small {
-  position: absolute;
-  width: 80%;
-  top: 24.5%;
-  left: 11.5%;
-}
-.spinner-astrolabe .background {
-  width: 100%;
-  border: none;
-  margin-left: -3px;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes nav {
-  0% {
-    transform: rotate(0deg);
-  }
-  15% {
-    transform: rotate(-30deg);
-  }
-  25% {
-    transform: rotate(30deg);
-  }
-  40% {
-    transform: rotate(-15deg);
-  }
-  50% {
-    transform: rotate(40deg);
-  }
-  70% {
-    transform: rotate(-50deg);
-  }
-  85% {
-    transform: rotate(75deg);
-  }
-  90% {
-    transform: rotate(-180deg);
-  }
-  100% {
-    transform: rotate(-355deg);
-  }
-}
 .spinner-square {
   box-sizing: border-box;
   width: 300px;
@@ -1464,18 +1374,23 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
+  font-size: 1.8em;
+  font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
 }
 .roam-app h2 {
   /* color: var(--h2-font-color); */
-  /* background-color: var(--h1-bg); */
+  /* background-color: var(--h2-bg); */
+  font-size: 1.6em;
+  font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
 }
 .roam-app h3 { 
   /* color: var(--h3-font-color); */
-  /* background-color: var(--h1-bg); */
+  /* background-color: var(--h3-bg); */
+  font-size: 1.5em;
   font-weight: bold;
   padding-left: 0px;
   margin-top: 0px !important;
