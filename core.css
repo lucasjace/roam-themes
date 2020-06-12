@@ -254,32 +254,6 @@ div#block-input-ghost span:before {
 /* Start of standard Roam Styles */
 /* --------------------------------------------------------------------------------------- */
 
-.spinner-square {
-  box-sizing: border-box;
-  width: 300px;
-  height: 300px;
-  background-color: grey;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  padding: 20px;
-  grid-gap: 20px;
-  z-index: 3;
-  grid-template-columns: 1fr 1fr;
-  cursor: pointer;
-}
-.spinner-square .spinner-square-front {
-  background-color: white;
-  z-index: 5;
-}
-.spinner-square .spinner-square-rotate {
-  position: absolute;
-  margin-left: 75px;
-  margin-top: 75px;
-  background-color: black;
-  width: 150px;
-  height: 150px;
-  animation: spin 4.5s linear infinite;
-}
 .scrollbar {
   margin-left: 30px;
   float: left;
@@ -1370,7 +1344,7 @@ div.rm-reference-container {
 .roam-app h1 {
   /* color: var(--h1-font-color); */
   /* background-color: var(--h1-bg); */
-  font-size: 1.15em;
+  font-size: 1.25em;
   padding-left: 0px;
   margin-top: 0px !important;
 }
