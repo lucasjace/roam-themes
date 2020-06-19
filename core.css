@@ -15,8 +15,8 @@
   --code-font-size: 1.0em;
   
   /* font colors */
-  --page-link-color: #eb9854;
-  --daily-notes-link-color:#eb9854;
+  --page-link-color: #ffb676;
+  --daily-notes-link-color:#ffb676;
   --external-link-color: #4CAF50;
   --sidebar-link-color: #1189BD;
   --page-brackets: rgba(228, 124, 67, 0.25);
@@ -39,7 +39,7 @@
   --block-ref-hover-bg:#111;
   --block-ref-font-size: 1.0em;
   --highlight-font-color: #222;
-  --highlight-background-color: #fdeb87d7;
+  --highlight-background-color: #fdeb87ad;
   --highlight-link-color: #ff6000;
   --search-font-color: #af671c;
   --search-body-font-color: #8a9ba8;
