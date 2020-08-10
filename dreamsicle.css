@@ -1,4 +1,4 @@
-/* POPSICLE ROAM THEME */
+/* CUSTOM ROAM THEME */
 
 :root {
   /* Roam default variables */
@@ -15,7 +15,7 @@
   --code-font-size: 1.0em;
   
   /* font colors */
-  --page-link-color: #ffb676;
+  --page-link-color: #55bbff;
   --daily-notes-link-color:#ffb676;
   --external-link-color: #4CAF50;
   --sidebar-link-color: #1189BD;
@@ -55,7 +55,7 @@
   --saving-remote: #d9822b;
   --synched: #0f9960;
   
-  /* Backgrounds and Outlines */
+  /* Backgrounds and outlines */
   --body-bg: #232323;
   --left-sidebar-bg: #2b2b2b;
   --right-sidebar-bg: #2b2b2b;
@@ -112,7 +112,7 @@
 
 /* ----------------------------------------- */
 
-/* CHECKBOX ALGINMENT - adjust the 'top' value to move the checkbox up or down to better align with the font selected above - the default font Inter uses -6px*/
+/* CHECKBOX ALGINMENT - adjust the 'top' value to move the checkbox up or down to better align with the font selected above */
 .check-container {
   top: -7px; 
   padding-right: 3px;
