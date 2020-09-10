@@ -6,7 +6,7 @@ Welcome to my current Roam Research theme(s)!
 
 To add either of these themes to your Roam, copy the line below to your `[[roam/css]]` page and it will apply automatically.
 
-If you want to also use the custom tags, you will need to copy that line separately (as shown in the screenshots).
+If you want to also use the custom tags, copy that line separately (as shown in the screenshots).
 
 Please feel free to fork or copy if you prefer to make changes to the code!
 
