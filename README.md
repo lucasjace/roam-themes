@@ -10,14 +10,11 @@ If you want to also use the custom tags, you will need to copy that line separat
 
 Please feel free to fork or copy if you prefer to make changes to the code!
 
-* Dreamsicle:
-
+_Dreamsicle:_
 @import url('https://lucasjace.github.io/roam-themes/dreamsicle.css');
-* Atomic:
-
+_Atomic:_
 @import url('https://lucasjace.github.io/roam-themes/atomic.css');
-* Custom Tags:
-
+_Custom Tags:_
 @import url('https://lucasjace.github.io/roam-themes/customtags.css');
 
 
