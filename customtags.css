@@ -1,0 +1,38 @@
+  /* CUSTOM TAGS: Uncomment to use the section below to create custom styles for specific tags. Change "Meeting" to match some portion of the title of the tag you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new tag to be customized */
+  
+  span.rm-page-ref[data-tag="Inbox"] {
+    background: #8BC34A;
+    color: #fff;
+    padding: 2px 6px;
+    line-height: 2em;
+    font-weight: 450;
+  }
+  
+  span.rm-page-ref[data-tag="Books"] {
+    background: #673AB7;
+    color: #fff;
+    padding: 2px 6px;
+    line-height: 2em;
+    font-weight: 450;
+  }
+  
+  span.rm-page-ref[data-tag="Readwise"] {
+    background: #6D6D6D7C;
+    color: #fff;
+    padding: 2px 6px;
+    line-height: 2em;
+    font-weight: 450;
+  }
+  
+  
+   /* CUSTOM LINKS: Uncomment to use the section below to create custom styles for specific links. Change "Theme" to match some portion of the title of the link you want to customize. Adjust the background-color value ("F00") and color value ("fff") to suite your preferences. Duplicate the section for each new link to be customized*/
+  
+  /* 
+  span[data-link-title*="Theme"] .rm-page-ref-link-color {
+    background-color: #F00;
+    color: #fff;
+    padding: 3px 7px;
+    line-height: 2em;
+    font-weight: 500;
+  }
+   */
