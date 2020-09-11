@@ -22,7 +22,7 @@ Please feel free to fork or copy if you prefer to make changes to the code!
 
 ### Dreamsicle ###
 
-This theme is primarily based on the ["Roam Railcast" theme by Jeff Harris](https://github.com/jmharris903/Railscast-for-Roam-Research-Theme), with tweaks to colors and other small changes.
+This theme is primarily based on the ["Roam Railcast" theme](https://github.com/jmharris903/Railscast-for-Roam-Research-Theme) by [Jeff Harris](https://twitter.com/jeffharrissays), with tweaks to colors and other small changes.
 
 Thanks, Jeff!
 
@@ -32,7 +32,7 @@ Thanks, Jeff!
 ### Atomic ###
 
 Atomic is a bit cleaner and less colorful than Dreamsicle. It is based on the [Dark Cyan theme](https://www.notion.so/Dark-Cyan-Theme-for-Roam-Research-b06aaf0b0664458b91f25d17fe305318) by [Maximilian Schulz](https://twitter.com/maxwschulz),
-which leverages code from the ["Roam Railcast" theme by Jeff Harris](https://github.com/jmharris903/Railscast-for-Roam-Research-Theme).
+which also leverages code from the ["Roam Railcast" theme](https://github.com/jmharris903/Railscast-for-Roam-Research-Theme) by [Jeff Harris](https://twitter.com/jeffharrissays).
 
 Thanks, Maximilian & Jeff!
 
