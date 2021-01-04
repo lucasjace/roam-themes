@@ -15,12 +15,12 @@
   --code-font-size: 1.0em;
   
   /* font colors */
-  --page-link-color: #55bbff;
-  --daily-notes-link-color: #55bbff;
+  --page-link-color: #76c8ff;
+  --daily-notes-link-color: #76c8ff;
   --external-link-color: #4CAF50;
-  --sidebar-link-color: #1189BD;
+  --sidebar-link-color: #76c8ff;
   --page-brackets: rgba(228, 124, 67, 0.25);
-  --h1-font-color: #1189BD;
+  --h1-font-color: #76c8ff;
   --h2-font-color: #fdeb87;
   --h3-font-color: rgb(200, 200, 200);
   --strong: #8175b4; /* bold */
@@ -30,7 +30,7 @@
   --tag-hover-bg:#e98924;
   --tag-radius: 3px;
   --tag-padding: 2px 3px;
-  --sidebar-font-color: #1189BD;
+  --sidebar-font-color: #76c8ff;
   --sidebar-font-color-hover:#e98924;
   --sidebar-hover-bg:#1f1f1f;
   --block-ref-bg: none;
